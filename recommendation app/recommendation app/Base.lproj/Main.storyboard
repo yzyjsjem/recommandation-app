@@ -61,7 +61,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIt-rv-YTw">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bIt-rv-YTw">
                                                 <rect key="frame" x="167" y="0.0" width="51" height="106.5"/>
                                             </switch>
                                         </subviews>
@@ -75,7 +75,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-H6-6K4">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-H6-6K4">
                                                 <rect key="frame" x="167" y="0.0" width="51" height="106.5"/>
                                             </switch>
                                         </subviews>
@@ -89,7 +89,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTu-z6-paZ">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vTu-z6-paZ">
                                                 <rect key="frame" x="167" y="0.0" width="51" height="106.5"/>
                                             </switch>
                                         </subviews>
@@ -103,7 +103,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kts-ip-Gax">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kts-ip-Gax">
                                                 <rect key="frame" x="167" y="0.0" width="51" height="106.5"/>
                                             </switch>
                                         </subviews>
@@ -114,6 +114,9 @@
                                 <rect key="frame" x="180" y="802" width="54" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="userdidtapnextbutton:" destination="Kza-je-5Mo" eventType="touchUpInside" id="10o-wq-ODf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Question Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-p2-m0R">
                                 <rect key="frame" x="133" y="140" width="148" height="20.5"/>
@@ -137,6 +140,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="lcR-wE-Y50"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="firstoptionlabel" destination="pUQ-Qy-eLS" id="kDo-0A-gbu"/>
+                        <outlet property="firstoptionswitch" destination="bIt-rv-YTw" id="r5r-YE-XOJ"/>
+                        <outlet property="fourthoptionlabel" destination="EW9-ti-0AM" id="dC2-gR-9Zs"/>
+                        <outlet property="fourthoptionswitch" destination="kts-ip-Gax" id="q59-sY-6UB"/>
+                        <outlet property="questionlabel" destination="Ke3-p2-m0R" id="g0F-bm-9UD"/>
+                        <outlet property="secondoptionlabel" destination="dyn-ly-FIV" id="1f5-gH-mku"/>
+                        <outlet property="secondoptionswitch" destination="x9m-H6-6K4" id="Doq-at-eaf"/>
+                        <outlet property="thirdoptionlabel" destination="5g1-gC-iyI" id="c0N-b3-gB4"/>
+                        <outlet property="thirdoptionswitch" destination="vTu-z6-paZ" id="BSh-I1-XJE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHF-df-RNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,6 +224,7 @@
                     <connections>
                         <outlet property="firstbutton" destination="aMl-U8-yqb" id="dAa-oh-aK9"/>
                         <outlet property="fourthbutton" destination="oHB-nG-WZu" id="csT-sI-v9g"/>
+                        <outlet property="questionlabel" destination="4T9-wt-6m6" id="Caa-DR-kSN"/>
                         <outlet property="secondbutton" destination="INd-yi-dRb" id="oUx-RI-aQt"/>
                         <outlet property="thirdbutton" destination="d2b-RI-ePb" id="7Pw-NJ-xcD"/>
                     </connections>
@@ -217,6 +232,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeB-hr-4XX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1782.608695652174" y="618.75"/>
+        </scene>
+        <!--Recommendationresultviewcontroller-->
+        <scene sceneID="NLq-ef-XTP">
+            <objects>
+                <viewController storyboardIdentifier="resultidentifier" id="QVX-cq-isb" customClass="recommendationresultviewcontroller" customModule="recommendation_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcC-4T-uMm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ChX-Pm-x7L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUo-jn-pHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sfR-33-ZZP">

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		432BB9F4275C4D0D0068E2DA /* questiontype1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432BB9F3275C4D0D0068E2DA /* questiontype1.swift */; };
 		432BB9F6275C4D1B0068E2DA /* questiontype2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432BB9F5275C4D1B0068E2DA /* questiontype2.swift */; };
+		432BB9F8275C68CB0068E2DA /* recommandationresultviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432BB9F7275C68CB0068E2DA /* recommandationresultviewcontroller.swift */; };
 		43ECD6D4274384800077A36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECD6D3274384800077A36E /* AppDelegate.swift */; };
 		43ECD6D6274384800077A36E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECD6D5274384800077A36E /* SceneDelegate.swift */; };
 		43ECD6D8274384800077A36E /* RecommandationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECD6D7274384800077A36E /* RecommandationViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		432BB9F3275C4D0D0068E2DA /* questiontype1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questiontype1.swift; sourceTree = "<group>"; };
 		432BB9F5275C4D1B0068E2DA /* questiontype2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questiontype2.swift; sourceTree = "<group>"; };
+		432BB9F7275C68CB0068E2DA /* recommandationresultviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recommandationresultviewcontroller.swift; sourceTree = "<group>"; };
 		43ECD6D0274384800077A36E /* recommendation app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recommendation app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43ECD6D3274384800077A36E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43ECD6D5274384800077A36E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				43ECD6D5274384800077A36E /* SceneDelegate.swift */,
 				43ECD6D7274384800077A36E /* RecommandationViewController.swift */,
 				43ECD6D9274384800077A36E /* Main.storyboard */,
+				432BB9F7275C68CB0068E2DA /* recommandationresultviewcontroller.swift */,
 				432BB9F3275C4D0D0068E2DA /* questiontype1.swift */,
 				432BB9F5275C4D1B0068E2DA /* questiontype2.swift */,
 				43ECD6DC274384820077A36E /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				43ECD6D8274384800077A36E /* RecommandationViewController.swift in Sources */,
 				432BB9F6275C4D1B0068E2DA /* questiontype2.swift in Sources */,
+				432BB9F8275C68CB0068E2DA /* recommandationresultviewcontroller.swift in Sources */,
 				432BB9F4275C4D0D0068E2DA /* questiontype1.swift in Sources */,
 				43ECD6D4274384800077A36E /* AppDelegate.swift in Sources */,
 				43ECD6D6274384800077A36E /* SceneDelegate.swift in Sources */,
