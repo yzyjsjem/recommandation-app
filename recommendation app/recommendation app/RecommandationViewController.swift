@@ -76,6 +76,7 @@ class currentrecommandation{
     func adduserresponse(_ response: [String]){
         self.responses.append(response)
     }
+    
 }
 
 struct surveyquestion{
