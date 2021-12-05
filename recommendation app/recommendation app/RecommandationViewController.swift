@@ -12,12 +12,13 @@ let mainStoryboard = UIStoryboard(name: "Main", bundle: .main)
 class RecommandationViewController: UIViewController {
     
     private let luckynumber : [surveyquestion] = [
+        surveyquestion(question: "which number do you like?", responsekind: .type2, options: ["1", "2", "3", "4" ]
+                              ),
         surveyquestion(question: "Do you like even or odd numbers?", responsekind: .type1, options: ["even", "odd", ]
                       ),
         surveyquestion(question: "Do you like double digit numbers?", responsekind: .type1, options: ["yes", "no", ]
                       ),
-        surveyquestion(question: "which number do you like?", responsekind: .type2, options: ["1", "2", "3", "4" ]
-                      ),
+        
     ]
 
 //    override func viewDidLoad() {
@@ -31,10 +32,16 @@ class RecommandationViewController: UIViewController {
             switch nextquestion.responsekind {
             case .type1:
                 if let viewcontroller = mainStoryboard.instantiateViewController(withIdentifier: "type1identifier") as? questiontype1{
+                    viewcontroller.currentquestion = nextquestion
+                    viewcontroller.currentrecommandation = recommandation
+                    self.navigationController?.show(viewcontroller, sender: self)
                     
                 }
             case .type2:
                 if let viewcontroller = mainStoryboard.instantiateViewController(withIdentifier: "type2identifier") as? questiontype2{
+                    viewcontroller.currentquestion = nextquestion
+                    viewcontroller.currentrecommandation = recommandation
+                    self.navigationController?.show(viewcontroller, sender: self)
                     
                 }
             }
